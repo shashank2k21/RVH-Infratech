@@ -51,7 +51,7 @@ const Contact = () => {
       location: 'Prayagraj',
       address: 'Main Office Complex, Prayagraj, Uttar Pradesh',
       phone: '+91 81789 10508',
-      email: 'rvhinfratech@gmail.com',
+      email: 'infratechrvh@gmail.com',
       type: 'primary'
     },
     {
@@ -59,7 +59,7 @@ const Contact = () => {
       location: 'Lucknow',
       address: 'Business Center, Lucknow, Uttar Pradesh',
       phone: '+91 98390 94670',
-      email: 'lucknow@rvhinfratech.com',
+      email: 'infratechrvh@gmail.com',
       type: 'secondary'
     },
     {
@@ -67,7 +67,7 @@ const Contact = () => {
       location: 'Noida',
       address: 'Corporate Office, Noida, Uttar Pradesh',
       phone: '+91 81789 10508',
-      email: 'noida@rvhinfratech.com',
+      email: 'infratechrvh@gmail.com',
       type: 'secondary'
     }
   ];
@@ -288,12 +288,29 @@ const Contact = () => {
         {/* Map Placeholder */}
         <div className="mt-16">
           <div className="bg-gray-200 rounded-2xl p-8 text-center">
-            <MapPin className="h-16 w-16 text-gray-400 mx-auto mb-4" />
-            <h4 className="text-xl font-semibold text-gray-600 mb-2">Office Locations Map</h4>
+            <iframe
+              title="Jaunpur Road, Phulpur, Prayagraj Office Location"
+              width="100%"
+              height="350"
+              style={{ border: 0, borderRadius: '1rem' }}
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=25.444986,81.949089&z=15&output=embed"
+            ></iframe>
+            <h4 className="text-xl font-semibold text-gray-600 mb-2 mt-4">Office Locations Map</h4>
             <p className="text-gray-500">Interactive map showing our office locations across India</p>
             <p className="text-sm text-gray-400 mt-2">
               For exact directions to any of our offices, please contact us directly.
             </p>
+            <a
+              href="https://maps.apple.com/place?address=Jaunpur%20Road,%20Phulpur,%20Prayagraj,%20211019,%20Uttar%20Pradesh,%20India&coordinate=25.444986,81.949089&name=Jaunpur%20Road&map=h"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-4 text-orange-600 underline"
+            >
+              View on Apple Maps
+            </a>
           </div>
         </div>
       </div>
