@@ -82,7 +82,7 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <img
-                src="Profile.jpg?auto=compress&cs=tinysrgb&w=400"
+                src="/Profile.jpg?auto=compress&cs=tinysrgb&w=400"
                 alt="Company Leadership"
                 className="w-64 h-64 object-cover rounded-full mx-auto shadow-lg"
               />
